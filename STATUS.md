@@ -8,7 +8,14 @@
 
 ---
 
-## ⭐ (this commit) — **MAIN WINDOW TITLE SHOWS THE VERSION: "Linux USB Mounter (2.2.1)".** _2026-09-28. Evidence: user request ("put the build version in parenthesis in the dialogue title bar, to the right of the \"Linux USB Miunter\" text"). `dotnet build -c Release`: 0 warnings, 0 errors. NOT seen on screen (the app needs elevation)._
+## ⭐ (this commit) — **CLAUDE.md: KALI-LINUX TEST DISTRO GONE, TUMBLEWEED IS THE ONLY DISTRO.** _2026-10-04. Evidence: user unregistered kali-linux (openSUSE for day-to-day work); `wsl --list --verbose` shows only openSUSE-Tumbleweed (default, WSL2). Docs only, no build._
+
+- **CLAUDE.md, Environment:** one distro (openSUSE-Tumbleweed, 6.18 drivers built); the Kali results stay as history,
+  re-testing the apt build path needs a new distro.
+
+---
+
+## ⭐ `09ea09b` — **MAIN WINDOW TITLE SHOWS THE VERSION: "Linux USB Mounter (2.2.1)".** _2026-09-28. Evidence: user request ("put the build version in parenthesis in the dialogue title bar, to the right of the \"Linux USB Miunter\" text"). `dotnet build -c Release`: 0 warnings, 0 errors. NOT seen on screen (the app needs elevation)._
 
 - **MainForm.BuildUi:** title = UiKit.AppName + " (" + assembly version, 3 parts + ")". Message boxes, tray tooltip and the log
   keep the plain name; the version number stays 2.2.1.

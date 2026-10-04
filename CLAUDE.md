@@ -40,9 +40,9 @@ policy (event 3077, policy 8f9cb695-5d48-48d6-a329-7202b44607e3).
   task name `BtrfsUsbMounter` (PointsElsewhere re-points it), the `BtrfsUsbMounter.ps1` check for the PowerShell version
 
 ## Environment (developer machine)
-- WSL2 distros: openSUSE-Tumbleweed (default), user `chippy`; btrfsprogs and util-linux installed.
-  kali-linux (2026-09-24, test distro for the apt build path; root only, no user created; remove with
-  `wsl --unregister kali-linux`). Both have the 6.18 drivers built (each distro keeps its own)
+- WSL2 distro: openSUSE-Tumbleweed (default, the only one), user `chippy`; btrfsprogs and util-linux installed;
+  6.18 drivers built. The kali-linux test distro (apt build path, 2026-09-24) was unregistered 2026-10-04 (user
+  request: openSUSE for day-to-day work); the Kali results below are history, re-testing apt needs a new distro
 - Test drive: 2 TB Seagate ST32000641AS in a USB enclosure, disk 2, GPT, btrfs partition 1,
   label `ExtDrive`, mounted at `/mnt/wsl/ExtDrive`, top folder owned by chippy
 

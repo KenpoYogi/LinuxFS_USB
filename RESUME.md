@@ -19,6 +19,8 @@ kind, a ReiserFS magic at 64 KiB now probes as nothing; `sh -n` on the script OK
 were no-ops on 6.18). CLAUDE.md updated.
 **Then (committed and pushed): main window title shows the version**, "Linux USB Mounter (2.2.1)" (user request; MainForm
 BuildUi, assembly version to 3 parts). Clean Release build; not seen on screen yet (the app needs elevation). Version stays 2.2.1.
+**Then (2026-10-04, committed and pushed): CLAUDE.md only.** The kali-linux test distro was unregistered (openSUSE for
+day-to-day work); Tumbleweed is the only distro. Re-testing the apt build path needs a new distro.
 
 _**Next: ① (done: committed, pushed)** **② run the 2.2.0 setup over the 2.0.0 install** (Update; Linux check says
 Tumbleweed is ready) **③ uninstall test** with a drive mounted (and, on a test PC, with a setup-installed distro) **④ the
@@ -33,9 +35,9 @@ earlier run list**._
 > ### 2. STATE
 > **Committed and pushed** on `main` (previous commit `c676eba`). Clean `dotnet build -c Release`: 0 warnings, 0 errors.
 > **User's machine:** 2.0.0 installed by setup in `C:\Apps\Linux_USB` (Start menu shortcut, logon task there). WSL 2.7.14,
-> distros openSUSE-Tumbleweed (default, ready) and kali-linux (test, ready). Tumbleweed's util-linux was upgraded
+> distro openSUSE-Tumbleweed only (default, ready; kali-linux unregistered 2026-10-04). Tumbleweed's util-linux was upgraded
 > 2.42.2 → 2.42.3 by a test of the first package-step version (normal repo update); since then only missing packages.
-> **Built modules:** Tumbleweed and Kali both have the final `ufs.ko` (`wsl_handoff=1`) in `/var/lib/wsl-modules/6.18.33.2-...`.
+> **Built modules:** Tumbleweed has the final `ufs.ko` (`wsl_handoff=1`) in `/var/lib/wsl-modules/6.18.33.2-...`.
 
 > ### 3. FILES THIS TURN
 > `installer/Setup.cs` (Installation.AddSetupDistro / SetupDistros, LinuxSetup.InstalledNames / RemoveDistro, Uninstaller
